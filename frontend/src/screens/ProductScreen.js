@@ -22,7 +22,7 @@ const ProductScreen = ({ history, match }) => {
 
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
-
+ 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
@@ -51,7 +51,7 @@ const ProductScreen = ({ history, match }) => {
       comment
     }))
   }
-
+  console.log(productDetails)
   return (
     <>
       <Link className='btn btn-light my-3' to='/'>
@@ -66,7 +66,7 @@ const ProductScreen = ({ history, match }) => {
           <Meta title={product.name} />
           <Row >
             <Col md={6}>
-              <Image src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619946" alt={product.name} fluid />
+              <Image src={product.image} alt={product.name} fluid />
             </Col>
             <Col md={3}>
               <ListGroup variant='flush'>
