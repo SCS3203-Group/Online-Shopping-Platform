@@ -9,8 +9,10 @@
 * ES7+ React/Redux/React-Native snippets
 * Prettier - Code formatter
 
-3. Open the frontend-web using VSCode and open the terminal and type `npm install` and wait until all files are downloaded
+3. Clone the git repository to your device. Open the Onnline-Shopping-Platform folder using VSCode.
 
-4. Open the backend using VSCode and open another terminal and type `npm install` and wait until all files are downloaded
+4. Open a terminal and type `npm install` and wait until all files are downloaded
+
+4. Open another terminal and navigate to the frontend folder using 'cd frontend' from the terminal and type `npm install` and wait until all files are downloaded
 
 5. On both terminals type ‘npm start’ and wait till it loads on the browser
